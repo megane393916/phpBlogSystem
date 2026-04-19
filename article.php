@@ -140,9 +140,9 @@ if (!$notFound) {
                         <!-- SNSシェアボタン -->
                         <div class="sns-share">
                             <span class="share-label">シェアする:</span>
-                            <a href="https://twitter.com/share?url=<?= urlencode($currentUrl) ?>&text=<?= urlencode($title . ' - ' . BLOG_TITLE) ?>" target="_blank" rel="noopener noreferrer" class="share-btn twitter">𝕏 Post</a>
+                            <a href="https://twitter.com/intent/tweet?url=<?= urlencode($currentUrl) ?>&text=<?= urlencode($title . ' - ' . BLOG_TITLE) ?>" target="_blank" rel="noopener noreferrer" class="share-btn twitter">𝕏 Post</a>
                             <a href="https://www.facebook.com/sharer/sharer.php?u=<?= urlencode($currentUrl) ?>" target="_blank" rel="noopener noreferrer" class="share-btn facebook">Facebook</a>
-                            <a href="https://social-plugins.line.me/lineit/share?url=<?= urlencode($currentUrl) ?>" target="_blank" rel="noopener noreferrer" class="share-btn line">LINE</a>
+                            <a href="https://line.me/R/msg/text/?<?= urlencode($title . ' - ' . BLOG_TITLE . ' ' . $currentUrl) ?>" target="_blank" rel="noopener noreferrer" class="share-btn line">LINE</a>
                             <button type="button" class="share-btn copy-url" onclick="copyArticleUrl(this)" data-url="<?= htmlspecialchars($currentUrl, ENT_QUOTES) ?>">URLコピー</button>
                         </div>
 
